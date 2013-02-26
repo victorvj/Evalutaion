@@ -26,6 +26,10 @@
 
 @synthesize octopocusButton;
 @synthesize desktopButton;
+@synthesize intertitleLabel;
+@synthesize applicationLabel;
+@synthesize applicationImage;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,6 +52,14 @@
     
     outPort = [manager createNewOutputToAddress:@"127.0.0.1" atPort:1234];
     
+    [applicationLabel setText:@"Open the application with image"];
+    [applicationLabel setTextAlignment:NSTextAlignmentCenter];
+    [intertitleLabel setTextAlignment:NSTextAlignmentCenter];
+    [applicationImage setImage:[UIImage imageNamed:@"facebook.png"]];
+    
+    [intertitleLabel setHidden:YES];
+    [applicationLabel setHidden:YES];
+    [applicationImage setHidden:YES];
     
 #if DEBUGGING_MODE == YES
 
@@ -59,7 +71,6 @@
     desktopButton.frame = frame;
     
 #else
-    
     [octopocusButton setHidden:YES];
     [desktopButton setHidden:YES];    
     desktopButton.frame = octopocusButton.frame;
@@ -117,6 +128,13 @@
 - (void) receivedOSCMessage:(OSCMessage *)m {
     NSArray* args = [m valueArray];
     NSString* address = [[args objectAtIndex:0] stringValue];
+    
+    // extract args
+//    applicationNumber;
+//    intertitle;
+//    page;
+//    method;
+    
     // test what kind of experiment component is starting (or ending)
     if ([address isEqualToString:@"/touchstone/experiment/start"]) {
     // retrieve attached arguments from the message (factor values for example)

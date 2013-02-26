@@ -21,6 +21,8 @@
     UIButton *desktopButton;
     
     UILabel *intertitleLabel;
+    UILabel *applicationLabel;
+    UIImageView *applicationImage;
     
     Draw2ViewController *draw2ViewController;
     OpenSpringBoardVC *openSpringBoardVC;
@@ -31,14 +33,23 @@
     OSCManager *manager;
     
     /**
-     * OSC OutPort uuu
+     * OSC OutPort
      */
     OSCOutPort *outPort;
+    
+    NSInteger applicationNumber;
+    NSInteger intertitle;
+    NSInteger page;
+    NSString *method;
     
 }
 
 @property (nonatomic, readwrite, strong) IBOutlet UIButton *octopocusButton;
 @property (nonatomic, readwrite, strong) IBOutlet UIButton *desktopButton;
+
+@property (nonatomic, readwrite, strong) IBOutlet UILabel *intertitleLabel;
+@property (nonatomic, readwrite, strong) IBOutlet UILabel *applicationLabel;
+@property (nonatomic, readwrite, strong) IBOutlet UIImageView *applicationImage;
 
 - (IBAction)octopocusButtonTapped;
 - (IBAction)desktopButtonTapped;
