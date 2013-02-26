@@ -31,7 +31,7 @@
     OSCManager *manager;
     
     /**
-     * OSC OutPort
+     * OSC OutPort uuu
      */
     OSCOutPort *outPort;
     
