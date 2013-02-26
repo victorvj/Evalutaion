@@ -16,5 +16,6 @@
 @synthesize appName;
 @synthesize schema;
 @synthesize appImageName;
+@synthesize identifier;
 
 @end

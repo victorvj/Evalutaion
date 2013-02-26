@@ -25,6 +25,11 @@
      */
     NSString *appImageName;
     
+    /**
+     * Application identifier
+     */
+    NSInteger identifier;
+
 }
 
 @property (nonatomic, readwrite, copy) NSString *appName;
@@ -32,5 +37,7 @@
 @property (nonatomic, readwrite, copy) NSString *schema;
 
 @property (nonatomic, readwrite, copy) NSString *appImageName;
+
+@property (nonatomic, readwrite) NSInteger identifier;
 
 @end

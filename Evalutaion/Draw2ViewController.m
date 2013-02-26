@@ -110,6 +110,7 @@
 @synthesize optionsButton;
 @synthesize delegate;
 @synthesize appToOpen;
+@synthesize appToOpenImage;
 
 #pragma mark -
 #pragma mark Memory management

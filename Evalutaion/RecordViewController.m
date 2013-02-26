@@ -118,6 +118,7 @@
     [app1 setAppName:@"Safari"];
     [app1 setSchema:@"http://www.lri.fr/~mbl/ENS/FONDIHM/2012/"];
     [app1 setAppImageName:@"Safari.png"];
+    [app1 setIdentifier:1];
 
     Application *app2 = [[Application alloc] init];
     [app2 setAppName:@"Maps"];
@@ -128,11 +129,13 @@
      NSString *stringURL = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@@%1.6f,%1.6f&z=%d", title, latitude, longitude, zoom];
     [app2 setSchema:stringURL];
     [app2 setAppImageName:@"Maps.jpg"];
+    [app2 setIdentifier:2];
 
     Application *app3 = [[Application alloc] init];
     [app3 setAppName:@"Phone"];
     [app3 setSchema:@"tel:0695442388"];
     [app3 setAppImageName:@"Phone.jpg"];
+    [app3 setIdentifier:3];
 
 //    Application *app4 = [[[Application alloc] init] autorelease];
 //    [app4 setAppName:@"SMS"];
@@ -143,16 +146,19 @@
     [app5 setAppName:@"Mail"];
     [app5 setSchema:@"mailto:test@example.com"];
     [app5 setAppImageName:@"Mail.png"];
+    [app5 setIdentifier:4];
 
     Application *app6 = [[Application alloc] init];
     [app6 setAppName:@"iTunes"];
     [app6 setSchema:@"music:"];
     [app6 setAppImageName:@"iTunes.jpg"];
+    [app6 setIdentifier:5];
 
     Application *app7 = [[Application alloc] init];
     [app7 setAppName:@"App Store"];
     [app7 setSchema:@"http://itunes.apple.com/es/app/whatsapp-messenger/id310633997?mt=8"];
     [app7 setAppImageName:@"AppStore.jpg"];
+    [app7 setIdentifier:6];
 
     colorsArray = [[NSMutableArray alloc]initWithObjects: color1, color2, color3, color6, color4, color5, nil];
     appsArray = [[NSMutableArray alloc]initWithObjects:app1, app2, app3, app5, app6, app7, nil];
