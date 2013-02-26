@@ -131,6 +131,7 @@
 		5713B59116DA48BD00D861E4 /* OSCValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5713B4EC16DA32D100D861E4 /* OSCValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5713B59216DA48BE00D861E4 /* OSCZeroConfDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5713B4EE16DA32D100D861E4 /* OSCZeroConfDomain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5713B59316DA48C100D861E4 /* OSCZeroConfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5713B4F016DA32D200D861E4 /* OSCZeroConfManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		670DF31216DD168C00F9C36A /* taptarget.png in Resources */ = {isa = PBXBuildFile; fileRef = 670DF31116DD168C00F9C36A /* taptarget.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -305,6 +306,7 @@
 		5713B53816DA37A300D861E4 /* Application_Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Application_Icon_57.png; sourceTree = "<group>"; };
 		5713B53916DA37A300D861E4 /* Application_Icon_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Application_Icon_128.png; sourceTree = "<group>"; };
 		5713B53A16DA37A300D861E4 /* touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touch.png; sourceTree = "<group>"; };
+		670DF31116DD168C00F9C36A /* taptarget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taptarget.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +430,7 @@
 		5713B4B516DA31C400D861E4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				670DF31116DD168C00F9C36A /* taptarget.png */,
 				5713B53416DA37A300D861E4 /* airsharing.jpg */,
 				5713B53316DA37A300D861E4 /* ambiance.jpg */,
 				5713B53216DA37A300D861E4 /* AppigoNotebook.jpg */,
@@ -689,6 +692,7 @@
 				5713B57616DA37A300D861E4 /* Application_Icon_57.png in Resources */,
 				5713B57716DA37A300D861E4 /* Application_Icon_128.png in Resources */,
 				5713B57816DA37A300D861E4 /* touch.png in Resources */,
+				670DF31216DD168C00F9C36A /* taptarget.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
