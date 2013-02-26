@@ -20,6 +20,8 @@
     UIButton *octopocusButton;
     UIButton *desktopButton;
     
+    UILabel *intertitleLabel;
+    
     Draw2ViewController *draw2ViewController;
     OpenSpringBoardVC *openSpringBoardVC;
     

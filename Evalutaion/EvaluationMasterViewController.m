@@ -49,6 +49,25 @@
     outPort = [manager createNewOutputToAddress:@"127.0.0.1" atPort:1234];
     
     
+#if DEBUGGING_MODE == YES
+
+    [octopocusButton setHidden:NO];
+    [desktopButton setHidden:NO];
+    
+    CGRect frame = octopocusButton.frame;
+    frame.origin.y = frame.origin.y - 100;
+    desktopButton.frame = frame;
+    
+#else
+    
+    [octopocusButton setHidden:YES];
+    [desktopButton setHidden:YES];    
+    desktopButton.frame = octopocusButton.frame;
+
+#endif
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
