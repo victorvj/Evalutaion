@@ -187,7 +187,7 @@
      initDate = [NSDate date];
      errorsCount = 0;
      gestureErrorsCount = 0;
-     //modufy something
+     //modufy something again
     
 }
 
