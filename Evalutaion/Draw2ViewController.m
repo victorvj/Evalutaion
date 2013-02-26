@@ -167,8 +167,22 @@
     drawableGesturesArray = [[NSMutableArray alloc] init];
     guideGesturesArray = [[NSMutableArray alloc] init];
      
-    optionsButton.layer.cornerRadius = 5.0;
-    optionsButton.layer.masksToBounds = YES;
+#if DEBUGGING_MODE
+     optionsButton.layer.cornerRadius = 5.0;
+     optionsButton.layer.masksToBounds = YES;
+     optionsButton.hidden = NO;
+     modeSwitch_.hidden = NO;
+     appToOpenImage.hidden = YES;
+     
+#else
+     optionsButton.hidden = YES;
+     modeSwitch_.hidden = YES;
+     appToOpenImage.hidden = NO;
+     appToOpenImage.image = [UIImage imageNamed:@"Phone.jpg"];
+//     appToOpenImage.contentMode = UIViewContentModeScaleAspectFit;
+     appToOpenImage.backgroundColor = [UIColor redColor];
+     
+#endif
      
      initDate = [NSDate date];
      errorsCount = 0;

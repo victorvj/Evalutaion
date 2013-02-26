@@ -81,3 +81,9 @@
  */
 #define COLOR_PINK          [UIColor colorWithRed:196.0/255.0 green:133.0/255.0 blue:176.0/255.0 alpha:1.0]
 
+#pragma mark -
+#pragma mark Modes
+
+#define DEBUGGING_MODE                                                    YES
+
+//@property (nonatomic) BOOL debugging_mode;

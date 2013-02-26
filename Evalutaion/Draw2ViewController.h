@@ -40,6 +40,11 @@
 	IBOutlet DrawView *viewDraw;
     
     /*
+     * The Image view with App icon
+     */
+	UIImageView *appToOpenImage;
+    
+    /*
      * Mode switch
      */
     UISegmentedControl *modeSwitch_;
@@ -115,6 +120,12 @@
  * Defines the viewDraw and exports it to the IB
  */
 @property (nonatomic, readwrite, strong) IBOutlet DrawView *viewDraw;
+
+/**
+ * Defines the appToOpenImage and exports it to the IB
+ */
+@property (nonatomic, readwrite, strong) IBOutlet UIImageView *appToOpenImage;
+
 
 /**
  * Defines the optionsButton and exports it to the IB
